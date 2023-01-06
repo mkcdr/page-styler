@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./popup.js"></script>
+    <style>
+        *, *::after, *::before {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 1rem;
+            min-width: 12rem;
+            color: #333;
+            background-color: #eee;
+        }
+
+        header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        header h1 {
+            font-style: italic;
+            font-family: serif;
+            margin: 0;
+        }
+        header img {
+            margin-inline-end: .3rem;
+        }
+
+        select {
+            width: 100%;
+            padding: .325rem;
+            border-radius: .3rem;
+            outline: none;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            margin-bottom: .5rem;
+        }
+
+        select:focus, select:active {
+            background-color: #fff;
+            box-shadow: 0 0 1px 3px rgb(135, 206, 235, 0.5);
+        }
+        
+        button {
+            width: 100%;
+            background:linear-gradient(to bottom, #637aad 5%, #5972a7 100%);
+            background-color:#637aad;
+            border:1px solid #314179;
+            border-radius: .3rem;
+            display:inline-block;
+            cursor:pointer;
+            color:#ffffff;
+            font-family:Arial;
+            font-size:13px;
+            font-weight:bold;
+            padding:6px 12px;
+            margin-bottom: .5rem;
+            text-decoration:none;
+        }
+        button:hover {
+            background:linear-gradient(to bottom, #5972a7 5%, #637aad 100%);
+	        background-color:#5972a7;
+        }
+        button:active {
+            position:relative;
+            top:1px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./images/icon-16.png" alt="sparks">
+        <h1>Page Styler</h1>
+    </header>
+    <form name="styleForm">
+        <select id="styleSelect" name="style"></select>
+        <button type="submit">Apply</button>
+    </form>
+    <footer>
+        <small>Version 1.0.0</small>
+    </footer>
+</body>
+</html>
